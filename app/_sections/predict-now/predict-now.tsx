@@ -153,7 +153,7 @@ export default function PredictNow() {
       </div>
 
       {/* Carousel */}
-      <div className="w-full px-4">
+      <div className="w-full px-6">
         <Carousel
           items={games}
           cardWidth={320}

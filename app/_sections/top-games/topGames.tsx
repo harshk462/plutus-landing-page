@@ -31,7 +31,7 @@ const TopGames: React.FC = () => {
         </h2>
     </div>
 
-    <div className="w-full px-4">
+    <div className="w-full px-6">
       <Carousel
       items={games}
       // cardWidth={320}
