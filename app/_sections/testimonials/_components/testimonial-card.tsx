@@ -25,7 +25,7 @@ export default function TestimonialCard({
     <div
       className="relative flex flex-col gap-4 p-6 rounded-[24px] border border-[#FFFFFF1F]
         bg-gradient-to-r from-[#870075A1] to-[#100134A1] shadow-lg
-        lg:w-[540px] w-full mx-auto h-full mr-6"
+        lg:w-[540px] w-full mx-auto h-64 mr-4"
     >
       {/* Decorative Background Logo */}
       <img

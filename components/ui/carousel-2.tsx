@@ -16,7 +16,7 @@ export default function Carousel<T>({
   renderItem,
   scrollAmount = 340,
   gap = "gap-4",
-  cardWidth = 320,
+  cardWidth,
 }: CarouselProps<T>) {
   const containerRef = useRef<HTMLDivElement>(null);
 

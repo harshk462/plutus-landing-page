@@ -91,7 +91,7 @@ export default function FAQS() {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="px-6 pb-6 pt-0 text-24-regular">
+                <div className="px-6 pb-6 pt-0 text-24-regular-inter">
                   <p className="text-[#676767]">
                     {item.answer}
                   </p>

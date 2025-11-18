@@ -13,43 +13,13 @@ interface Game {
 
 
 const TopGames: React.FC = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [scrollPosition, setScrollPosition] = useState<number>(0);
-  const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false);
-  const [canScrollRight, setCanScrollRight] = useState<boolean>(true);
-
   const games: Game[] = [
-    { title: "8 Ball Pool", url: "/assets/8Balls.png", icon: "/assets/8BallsLogo.png" },
-    { title: "8 Ball Pool", url: "/assets/8Balls.png", icon: "/assets/8BallsLogo.png" },
-    { title: "8 Ball Pool", url: "/assets/8Balls.png", icon: "/assets/8BallsLogo.png" },
-    { title: "8 Ball Pool", url: "/assets/8Balls.png", icon: "/assets/8BallsLogo.png" },
-    { title: "8 Ball Pool", url: "/assets/8Balls.png", icon: "/assets/8BallsLogo.png" },
+    { title: "8 Ball Pool", icon: "https://cdn.plutus.gg/public/gameAssets/card_pool.webp", url: "/assets/8-ball.gif" },
+    { title: "Tower Twist", icon: "https://cdn.plutus.gg/public/gameAssets/card_tower.webp", url: "/assets/tower-twist.gif" },
+    { title: "Blazing Blades", icon: "https://cdn.plutus.gg/public/gameAssets/blades-card.webp", url: "/assets/blazing-blades.gif" },
+    { title: "Boulder Blast", icon: "https://cdn.plutus.gg/public/gameAssets/boulder-card.webp", url: "/assets/boulder-blast.gif" },
+    { title: "Battleship", icon: "https://cdn.plutus.gg/public/gameAssets/header_battleship.webp", url: "/assets/battleship.gif" },
   ];
-
-  const checkScroll = () => {
-    const el = scrollRef.current;
-    if (el) {
-      setScrollPosition(el.scrollLeft);
-      setCanScrollLeft(el.scrollLeft > 0);
-      setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth);
-    }
-  };
-
-  useEffect(() => {
-    checkScroll();
-    window.addEventListener("resize", checkScroll);
-    return () => window.removeEventListener("resize", checkScroll);
-  }, []);
-
-  const scroll = (direction: "left" | "right") => {
-    if (scrollRef.current) {
-      const scrollAmount = scrollRef.current.clientWidth / 2;
-      scrollRef.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <section className="relative bg-black font-inter overflow-x-hidden">
@@ -64,8 +34,9 @@ const TopGames: React.FC = () => {
     <div className="w-full px-4">
       <Carousel
       items={games}
-      cardWidth={320}
-      scrollAmount={350}
+      // cardWidth={320}
+      // scrollAmount={350}
+      gap="gap-0"
       renderItem={(item) => (
         <GameCard
           title={item.title}

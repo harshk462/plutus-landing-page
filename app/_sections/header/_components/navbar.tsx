@@ -12,7 +12,7 @@ const navLinks = [
 
 export function Navbar() {
   return (
-    <nav className="w-full mx-auto h-20 flex items-center justify-between px-4 md:px-6 lg:px-8">
+    <nav className="sticky top-0 w-full mx-auto h-20 flex items-center justify-between px-4 md:px-6 lg:px-8 bg-black z-1000">
       {/* Logo and Text */}
       <Link href="/" className="flex items-center gap-3">
         <Image

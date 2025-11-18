@@ -1,5 +1,6 @@
 import FAQS from "./_sections/faqs/faqs";
 import LandingFooter from "./_sections/footer/footer";
+import { Navbar } from "./_sections/header/_components/navbar";
 import { Header } from "./_sections/header/header";
 import HomepageStrip from "./_sections/homepage-strip/strip";
 import Map from "./_sections/map/map";
@@ -10,11 +11,12 @@ import TopGames from "./_sections/top-games/topGames";
 export default function Home() {
   return (
     <>
+    <Navbar/>
       <Header />
       <HomepageStrip/>
       <TopGames/>
       <PredictNow/>
-      {/* <Testimonials/> */}
+      <Testimonials/>
       <Map/>
       <FAQS/>
       <LandingFooter/>
