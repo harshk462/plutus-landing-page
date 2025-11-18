@@ -22,12 +22,12 @@ const TopGames: React.FC = () => {
   ];
 
   return (
-    <section className="relative bg-black font-inter overflow-x-hidden">
+    <section className="relative bg-black font-inter overflow-x-hidden" id="games">
       <img src="/assets/plutusLogo.png" alt="" className="absolute left-0" />
       <div className="w-full px-4 sm:px-6 lg:px-8 pt-16">
         <h2 className="text-center mb-12">
-          <span className="text-subheading font-regular uppercase">TOP GAMES ON</span>{" "}
-          <span className="text-subheading font-regular bg-clip-text text-[#FF69EB]">PLUTUS</span>
+          <span className="text-subheading font-regular uppercase">TOP GAMES ON</span>
+          <span className="text-subheading font-regular bg-clip-text text-[#FF69EB]">{"  "}PLUTUS</span>
         </h2>
     </div>
 

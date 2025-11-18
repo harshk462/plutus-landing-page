@@ -1,7 +1,7 @@
 import FAQS from "./_sections/faqs/faqs";
 import LandingFooter from "./_sections/footer/footer";
+import { MainHeader } from "./_sections/header/_components/main-header";
 import { Navbar } from "./_sections/header/_components/navbar";
-import { Header } from "./_sections/header/header";
 import HomepageStrip from "./_sections/homepage-strip/strip";
 import Map from "./_sections/map/map";
 import PredictNow from "./_sections/predict-now/predict-now";
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-      <Header />
+    <MainHeader/>
       <HomepageStrip/>
       <TopGames/>
       <PredictNow/>

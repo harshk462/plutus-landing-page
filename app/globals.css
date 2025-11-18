@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @custom-variant dark (&:is(.dark *));
 @theme inline {
   --color-background: var(--background);
@@ -169,8 +173,18 @@
   @apply font-koulen font-normal text-[1.125rem] lg:text-[1.5rem];
 }
 
+.text-24-medium-inter {
+  @apply font-inter font-medium text-[1] lg:text-[1.5rem]; /* 18px / 16 = 1.125rem, 24px / 16 = 1.5rem */
+}
 .text-24-regular-inter {
-  @apply font-inter font-normal text-[1rem] lg:text-[1.5rem];
+  @apply font-inter font-normal text-[1rem] lg:text-[1.5rem]; /* 18px / 16 = 1.125rem, 24px / 16 = 1.5rem */
+}
+
+.text-20-medium-inter {
+  @apply font-inter font-medium text-[0.9375rem] lg:text-[1.25rem];
+}
+.text-20-regular-inter {
+  @apply font-inter font-normal text-[0.9375rem] lg:text-[1.25rem];
 }
 
 .text-18-medium {
@@ -180,6 +194,13 @@
   @apply font-koulen font-normal text-[1rem] lg:text-[1.125rem];
 }
 
+.text-18-medium-inter {
+  @apply font-inter font-medium text-[1rem] lg:text-[1.125rem]; /* 16px / 16 = 1rem, 18px / 16 = 1.125rem */
+}
+.text-18-regular-inter {
+  @apply font-inter font-normal text-[1rem] lg:text-[1.125rem];
+}
+
 .text-16-medium {
   @apply font-koulen font-medium text-[0.875rem] lg:text-[1rem]; /* 14px / 16 = 0.875rem, 16px / 16 = 1rem */
 }
@@ -187,11 +208,18 @@
   @apply font-koulen font-normal text-[0.875rem] lg:text-[1rem];
 }
 
+.text-16-medium-inter {
+  @apply font-inter font-medium text-[0.75rem] lg:text-[1rem]; /* 14px / 16 = 0.875rem, 16px / 16 = 1rem */
+}
+.text-16-regular-inter {
+  @apply font-inter font-normal text-[0.75rem] lg:text-[1rem];
+}
+
 .text-14-medium {
-  @apply font-koulen font-medium text-[0.75rem] lg:text-[0.875rem]; /* 12px / 16 = 0.75rem, 14px / 16 = 0.875rem */
+  @apply font-koulen font-medium text-[0.625rem] lg:text-[0.875rem]; /* 12px / 16 = 0.75rem, 14px / 16 = 0.875rem */
 }
 .text-14-regular {
-  @apply font-koulen font-normal text-[0.75rem] lg:text-[0.875rem];
+  @apply font-koulen font-normal text-[0.625rem] lg:text-[0.875rem];
 }
 
 .text-14-medium-inter {
@@ -199,6 +227,13 @@
 }
 .text-14-regular-inter {
   @apply font-inter font-normal text-[0.75rem] lg:text-[0.875rem];
+}
+
+.text-12-medium-inter {
+  @apply font-inter font-medium text-[0.5625rem] lg:text-[0.75rem]; /* 10px / 16 = 0.625rem, 12px / 16 = 0.75rem */
+}
+.text-12-regular-inter {
+  @apply font-inter font-normal text-[0.5625rem] lg:text-[0.75rem];
 }
 
 .border-transparent {

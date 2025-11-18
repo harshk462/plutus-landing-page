@@ -104,12 +104,8 @@ export function MainHeader() {
         </div>
       </div>
 
-      {/* Side Images */}
-      {/* Left Image */}
-{/* Left Image */}
-{/* Left Image */}
-{/* Left Image */}
-<div className="absolute left-0 bottom-0 z-10 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px]">
+  
+      <div className="absolute left-0 bottom-0 z-10 w-1/2 h-[220px] lg:w-1/3 lg:h-[420px]">
   <Image
     src="/left_side_predictions.png"
     alt="Left Side Predictions"
@@ -118,8 +114,7 @@ export function MainHeader() {
   />
 </div>
 
-{/* Right Image */}
-<div className="absolute right-0 bottom-0 z-10 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px]">
+<div className="absolute right-0 bottom-0 z-10 w-1/2 h-[220px] lg:w-1/3 lg:h-[420px]">
   <Image
     src="/right_side_predictions.png"
     alt="Right Side Predictions"

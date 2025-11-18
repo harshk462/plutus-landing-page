@@ -81,10 +81,6 @@ export default function Carousel<T>({
         {items.map((item, index) => (
           <div
             key={index}
-            className="shrink-0"
-            style={{
-              minWidth: `${cardWidth}px`,
-            }}
           >
             {renderItem(item, index)}
           </div>

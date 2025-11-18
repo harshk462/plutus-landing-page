@@ -5,7 +5,6 @@ import Carousel from "@/components/ui/carousel-2";
 import React from "react";
 
 interface CreatorCardProps {
-  title: string;
   trades: string;
   tag: string;
   text: string;
@@ -14,7 +13,6 @@ interface CreatorCardProps {
 }
 
 const CreatorCard: React.FC<CreatorCardProps> = ({
-  title,
   trades,
   tag,
   text,
@@ -24,7 +22,7 @@ const CreatorCard: React.FC<CreatorCardProps> = ({
   return (
     <div
       className="
-        relative w-[20rem] h-[32.8125rem]
+        relative lg:w-[20rem] lg:h-[32.8125rem] w-[15.625rem] h-[25rem]
         rounded-2xl overflow-hidden
         border border-[#FFFFFF1F] mr-[1.5rem]
         outline outline-[0.09375rem] outline-[#FFFFFF1F]
@@ -34,7 +32,7 @@ const CreatorCard: React.FC<CreatorCardProps> = ({
       {/* Trades Badge */}
       <span
         className="
-        absolute top-4 right-4 text-[0.75rem] text-white px-4 py-2
+        absolute top-4 right-4 text-14-medium-inter text-white px-4 py-2
         bg-black/40 rounded-3xl w-fit
         backdrop-blur-md z-1000
       "
@@ -45,7 +43,6 @@ const CreatorCard: React.FC<CreatorCardProps> = ({
       {/* Background Image */}
       <img
         src={imagePlaceholderUrl}
-        alt={title}
         className="absolute inset-0 w-full h-full object-cover"
       />
 
@@ -57,7 +54,7 @@ const CreatorCard: React.FC<CreatorCardProps> = ({
         {/* Category Tag */}
         <span
           className="
-          text-[0.75rem] px-4 py-2 text-white
+          text-14-medium-inter px-4 py-2
           bg-white/10 rounded-3xl w-fit
           backdrop-blur-md
         "
@@ -65,16 +62,16 @@ const CreatorCard: React.FC<CreatorCardProps> = ({
           {tag}
         </span>
 
-        <h2 className="text-[1.125rem] font-semibold mt-1">{text}</h2>
+        <h2 className="text-18-regular-inter mt-1">{text}</h2>
 
-        <p className="text-[0.75rem] text-gray-300 mt-2">{subText}</p>
+        <p className="text-12-medium-inter text-gray-300 mt-2">{subText}</p>
 
         {/* Yes / No Buttons */}
         <div className="flex justify-between mt-4">
-          <button className="flex-1 mr-2 border border-[#07F93C] rounded-[0.6rem] text-[0.875rem] bg-[#004012] py-1">
+          <button className="cursor-pointer flex-1 mr-2 border border-[#07F93C] rounded-[0.4625rem] text-12-regular-inter bg-[#004012] py-1">
             Yes
           </button>
-          <button className="flex-1 ml-2 border border-[#FD5C5C] rounded-[0.6rem] text-[0.875rem] bg-[#450404] py-1">
+          <button className="cursor-pointer flex-1 ml-2 border border-[#FD5C5C] rounded-[0.4625rem] text-12-regular-inter bg-[#450404] py-1">
             No
           </button>
         </div>
@@ -86,52 +83,32 @@ const CreatorCard: React.FC<CreatorCardProps> = ({
 export default function PredictNow() {
   const games = [
     {
-      title: "8 Ball Pool",
+      trades: "20K Trades",
+      tag: "#F1",
+      text: "Ferrari to finally win a race before March 2026?",
+      subText: "Ends in 0D 0hrs 0mins",
+      url: "/assets/f1.png",
+    },
+    {
+      trades: "20K Trades",
+      tag: "#Youtube",
+      text: "Will MrBeast cross 500 million YouTube subscribers by March 2026?",
+      subText: "Ends in 0D 0hrs 0mins",
+      url: "/assets/mr-beast.png",
+    },
+    {
       trades: "20K Trades",
       tag: "#SPORTS",
-      text: "Messi’s MLS team to win their season opener?",
+      text: "Messi’s MLS team to win their 2027 season opener?",
       subText: "Ends in 0D 0hrs 0mins",
       url: "/assets/messi.png",
     },
     {
-      title: "8 Ball Pool",
       trades: "20K Trades",
       tag: "#SPORTS",
-      text: "Messi’s MLS team to win their season opener?",
+      text: "Will Arsenal still be in the top 3 of the Premier League by March 2026?",
       subText: "Ends in 0D 0hrs 0mins",
-      url: "/assets/messi.png",
-    },
-    {
-      title: "8 Ball Pool",
-      trades: "20K Trades",
-      tag: "#SPORTS",
-      text: "Messi’s MLS team to win their season opener?",
-      subText: "Ends in 0D 0hrs 0mins",
-      url: "/assets/messi.png",
-    },
-    {
-      title: "8 Ball Pool",
-      trades: "20K Trades",
-      tag: "#SPORTS",
-      text: "Messi’s MLS team to win their season opener?",
-      subText: "Ends in 0D 0hrs 0mins",
-      url: "/assets/messi.png",
-    },
-    {
-      title: "8 Ball Pool",
-      trades: "20K Trades",
-      tag: "#SPORTS",
-      text: "Messi’s MLS team to win their season opener?",
-      subText: "Ends in 0D 0hrs 0mins",
-      url: "/assets/messi.png",
-    },
-    {
-      title: "8 Ball Pool",
-      trades: "20K Trades",
-      tag: "#SPORTS",
-      text: "Messi’s MLS team to win their season opener?",
-      subText: "Ends in 0D 0hrs 0mins",
-      url: "/assets/messi.png",
+      url: "/assets/arsenal.png",
     },
   ];
 
@@ -148,7 +125,7 @@ export default function PredictNow() {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <h2 className="text-center mb-12 pt-16">
           <span className="text-subheading uppercase">PREDICT NOW ON </span>
-          <span className="text-subheading text-[#FF69EB]">PLUTUS</span>
+          <span className="text-subheading text-[#FF69EB]">{"  "}PLUTUS</span>
         </h2>
       </div>
 
@@ -156,11 +133,10 @@ export default function PredictNow() {
       <div className="w-full px-6">
         <Carousel
           items={games}
-          cardWidth={320}
-          scrollAmount={350}
+          // scrollAmount={350}
+          gap="gap-0"
           renderItem={(item) => (
             <CreatorCard
-              title={item.title}
               trades={item.trades}
               tag={item.tag}
               text={item.text}

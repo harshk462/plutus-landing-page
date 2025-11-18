@@ -54,7 +54,7 @@ export default function FAQS() {
         </div>
 
         {/* Accordion Items */}
-        <div className="space-y-4">
+        <div className="">
           {faqData.map((item, index) => (
             <div
               key={index}
@@ -63,21 +63,21 @@ export default function FAQS() {
               {/* Question Button */}
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full flex items-center justify-between p-6 text-left"
+                className="w-full flex items-center justify-between px-6 py-4 text-left"
               >
-                <span className="text-white text-24-medium pr-4">
+                <span className="text-white text-24-medium-inter pr-4">
                   {index + 1}. {item.question}
                 </span>
 
                 <div
-                  className={`flex-shrink-0 w-12 h-12 rounded-tr-xl rounded-br-xl flex items-center justify-center transition-all duration-300 cursor-pointer ${
+                  className={`hidden lg:flex flex-shrink-0 w-14 h-14 rounded-tr-[0.5rem] rounded-br-[0.5rem]  items-center justify-center transition-all duration-300 cursor-pointer ${
                     openIndex === index ? "bg-[#FF69EB]" : "bg-[#2a2a2a]"
                   }`}
                 >
                   {openIndex === index ? (
-                    <Minus className="w-6 h-6 text-white" strokeWidth={3} />
+                    <Minus className="w-5 h-5 text-white" strokeWidth={3} />
                   ) : (
-                    <Plus className="w-6 h-6 text-white" strokeWidth={3} />
+                    <Plus className="w-5 h-5 text-white" strokeWidth={3} />
                   )}
                 </div>
 
