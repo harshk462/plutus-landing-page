@@ -5,7 +5,7 @@ import React, { ReactNode, SetStateAction } from "react";
 // Custom imports
 import { customGradients } from "@/lib/customClasses";
 import { PlutusUser } from './user'
-
+import { JSX } from "react";
 /*
  * Basic Type Definitions
  */
@@ -416,8 +416,4 @@ export interface BuyOpinionRequest {
 export enum TradeStatus {
   OPEN = "open",
   CLOSED = "closed",
-}
-
-export interface IObject {
-  [x: string]: any;
 }
