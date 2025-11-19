@@ -7,15 +7,19 @@ export function MainHeader() {
   return (
     <section className="relative w-full h-[calc(100dvh-5rem)] flex flex-col items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/header_background_games.png"
-          alt="Header Background"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
+    <div className="absolute inset-0 z-0">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full h-full object-cover"
+  >
+    <source src="/assets/homepage-video.mp4" type="video/mp4" />
+    No video support
+  </video>
+</div>
+
 
       {/* Gradient Overlay */}
       <div
