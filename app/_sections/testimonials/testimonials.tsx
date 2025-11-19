@@ -52,43 +52,43 @@ export default function Testimonials() {
 
   const cards = [
     <TestimonialCard
-    summary='Highly recommended'
-      reviewText="It`s real bets being placed and if you don't have coins you're allowed to grind xp in the free games and you're not as on edge as you are when playing for coins obviously and yes the coins can actually be converted great game overall no sore losers"
+    summary='Its extremely engaging'
+      reviewText="It's real bets being placed and if you don't have coins you're aloud to grind xp in the free games and you're not as on edge as you are when playing for coins obviously and yes the coins can actually be converted great game overall no sore losers"
       rating= {5}
       date= "AUG 22"
-      author= "ProPlayer"
+      author= "Tonstersir"
       index={0}
       key={0}/>,
       <TestimonialCard
-    summary='Highly recommended'
-      reviewText="It`s real bets being placed and if you don't have coins you're allowed to grind xp in the free games and you're not as on edge as you are when playing for coins obviously and yes the coins can actually be converted great game overall no sore losers"
+    summary='I think the games are alright'
+      reviewText="I've been planning to have for a couple days so far it's far and it doesn't look like nobody is cheating. All I need to check now is cashing out."
       rating= {5}
-      date= "AUG 22"
-      author= "ProPlayer"
+      date= "SEP 26"
+      author= "coolrichrich"
       index={1}
       key={0}/>,
       <TestimonialCard
-    summary='Highly recommended'
-      reviewText="It`s real bets being placed and if you don't have coins you're allowed to grind xp in the free games and you're not as on edge as you are when playing for coins obviously and yes the coins can actually be converted great game overall no sore losers"
+    summary='Friendly for beginners'
+      reviewText="I had to figure things out on my own at first, but once I got used to it, the app became really fun. Tutorial pop-ups for new users would help a lot."
       rating= {5}
-      date= "AUG 22"
-      author= "ProPlayer"
+      date= "SEP 19"
+      author= "Tyrhonda Mielnikulqtin"
       index={2}
       key={0}/>,
       <TestimonialCard
-    summary='Highly recommended'
-      reviewText="It`s real bets being placed and if you don't have coins you're allowed to grind xp in the free games and you're not as on edge as you are when playing for coins obviously and yes the coins can actually be converted great game overall no sore losers"
+    summary='Cant complain except need higher referral bonus'
+      reviewText="Plutus works as promised. Easy to use, fair, and transparent. Wish the referral bonuses were a bit higher to make it more exciting."
       rating= {5}
       date= "AUG 22"
-      author= "ProPlayer"
+      author= "taunia-flaverty 1987pzyc"
       index={3}
       key={0}/>,
       <TestimonialCard
-    summary='Highly recommended'
-      reviewText="It`s real bets being placed and if you don't have coins you're allowed to grind xp in the free games and you're not as on edge as you are when playing for coins obviously and yes the coins can actually be converted great game overall no sore losers"
+    summary='Smooth design'
+      reviewText="The Ul is minimal and distraction-free, no annoying ads or clutter. Adding a light mode option would make it even better for day use"
       rating= {5}
-      date= "AUG 22"
-      author= "ProPlayer"
+      date= "SEP 22"
+      author= "夷荀闵危"
       index={4}
       key={0}/>
   ]
