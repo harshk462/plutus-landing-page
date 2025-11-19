@@ -42,12 +42,12 @@ export default function HeaderStrip() {
       icon: IconGamepad,
     },
     {
-      playerCount: "500K+ Active Players",
+      playerCount: "2X CASH REWARDS",
       description: "INSTANT WITHDRAWALS",
       icon: IconLightning,
     },
     {
-      playerCount: "500K+ Players",
+      playerCount: "500k Active Players",
       description: "LICENSED & COMPLIANT",
       icon: IconShield,
     },
