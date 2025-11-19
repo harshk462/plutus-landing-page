@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { APP_STORE_URL, PLAY_STORE_URL } from "@/constants/constants";
 
 export function MainHeader() {
   return (
@@ -65,7 +66,7 @@ export function MainHeader() {
         <div className="flex flex-col sm:flex-row relative z-10 items-center justify-center gap-4 md:gap-6">
           {/* App Store */}
           <Link
-            href="https://apps.apple.com/app/plutus-predict-win-real/id6754492902"
+            href={APP_STORE_URL}
             target="_blank"
             className={cn(
               "flex items-center gap-3 px-[0.6875rem] py-[0.1875rem] w-[11rem] h-[4rem] rounded-[0.60375rem] cursor-pointer",
@@ -93,7 +94,7 @@ export function MainHeader() {
 
           {/* Google Play */}
           <Link
-            href="https://play.google.com/store/apps/details?id=com.plutus.app"
+            href={PLAY_STORE_URL}
             target="_blank"
             className={cn(
               "flex items-center gap-3 px-[0.6875rem] py-[0.1875rem] w-[11rem] h-[4rem] rounded-[0.60375rem] cursor-pointer",
