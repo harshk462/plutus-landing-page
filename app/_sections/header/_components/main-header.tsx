@@ -7,18 +7,31 @@ export function MainHeader() {
   return (
     <section className="relative w-full h-[calc(100dvh-5rem)] flex flex-col items-center justify-center overflow-hidden">
       {/* Background Image */}
-    <div className="absolute inset-0 z-0">
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className="w-full h-full object-cover"
-  >
-    <source src="/assets/homepage-video.mp4" type="video/mp4" />
-    No video support
-  </video>
-</div>
+    <div className="hidden lg:absolute inset-0 z-0">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full h-full object-cover"
+      >
+        <source src="/assets/homepage-video.mp4" type="video/mp4" />
+        No video support
+      </video>
+    </div>
+
+    <div className="absolute lg:hidden inset-0 z-0">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full h-full object-cover"
+      >
+        <source src="/assets/homepage-video-mobile.mp4" type="video/mp4" />
+        No video support
+      </video>
+    </div>
 
 
       {/* Gradient Overlay */}
