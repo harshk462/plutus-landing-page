@@ -94,7 +94,7 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="relative bg-black font-inter w-full overflow-hidden" id="about">
+    <section className="relative bg-black font-inter w-full overflow-hidden">
       {/* <img
         src="/assets/plutusLogo.png"
         alt="plutus logo"

@@ -44,7 +44,7 @@ export default function FAQS() {
   };
 
   return (
-    <section className="bg-black py-16 sm:py-24 font-inter">
+    <section className="bg-black py-16 sm:py-24 font-inter" id="about">
       <div className="max-w-5xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">

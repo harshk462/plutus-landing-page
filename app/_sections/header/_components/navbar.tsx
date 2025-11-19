@@ -12,7 +12,7 @@ const navLinks = [
 
 export function Navbar() {
   return (
-    <nav className="sticky top-0 w-full mx-auto h-20 flex items-center justify-between px-4 md:px-6 lg:px-8 bg-black z-1000">
+    <nav className="sticky top-0 w-full mx-auto h-20 flex items-center justify-between px-4 md:px-6 lg:px-8 bg-black z-50">
       {/* Logo and Text */}
       <Link href="#home" className="flex items-center gap-3">
         <Image
@@ -31,7 +31,7 @@ export function Navbar() {
         </span>
       </Link>
 
-      {/* Desktop Navigation Links */}
+      {/* Desktop Navigation */}
       <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
         {navLinks.map((link) => (
           <Link
@@ -48,7 +48,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       <Sheet>
-        <SheetTrigger asChild className="md:hidden">
+        <SheetTrigger asChild className="md:hidden z-50">
           <button
             className="text-white hover:text-neutral-300 transition-colors"
             aria-label="Open menu"
@@ -56,9 +56,10 @@ export function Navbar() {
             <Menu className="h-6 w-6" />
           </button>
         </SheetTrigger>
+
         <SheetContent
           side="right"
-          className="bg-neutral-950 border-neutral-800"
+          className="bg-neutral-950 border-neutral-800 z-[9999]"
         >
           <nav className="flex flex-col gap-6 mt-8 pl-10">
             {navLinks.map((link) => (
