@@ -8,30 +8,24 @@ export function MainHeader() {
   return (
     <section className="relative w-full h-[calc(100dvh-5rem)] flex flex-col items-center justify-center overflow-hidden">
       {/* Background Image */}
-    <div className="hidden lg:absolute inset-0 z-0">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="w-full h-full object-cover"
-      >
-        <source src="/assets/homepage-video.mp4" type="video/mp4" />
-        No video support
-      </video>
+    <div className="lg:absolute inset-0 z-0">
+      <Image
+        src="/assets/homepage-video.gif"
+        alt="background animation"
+        fill
+        className="object-cover"
+        priority
+      />
     </div>
 
     <div className="absolute lg:hidden inset-0 z-0">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="w-full h-full object-cover"
-      >
-        <source src="/assets/homepage-video-mobile.mp4" type="video/mp4" />
-        No video support
-      </video>
+      <Image
+        src="/assets/homepage-video-mobile.gif"
+        alt="Mobile background animation"
+        fill
+        className="object-cover"
+        priority
+      />
     </div>
 
 
