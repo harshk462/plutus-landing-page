@@ -89,6 +89,65 @@ export default function Testimonials() {
       date= "SEP 22"
       author= "夷荀闵危"
       index={4}
+      key={0}/>,
+  ]
+
+   const cards2 = [
+    <TestimonialCard
+    summary='favorite casual app'
+      reviewText="Out of all reward apps I’ve tried, this is the only one that feels legit. Payouts happen fast and without hassle."
+      rating= {5}
+      date= "SEP 19"
+      author= "Muhmmad Klichbsnplq"
+      index={0}
+      key={0}/>,
+      <TestimonialCard
+    summary='Good game'
+      reviewText="I use Plutus casually and still manage to earn. It doesn’t push me to spend, which I appreciate."
+      rating= {5}
+      date= "SEP 19"
+      author= "Shatasia Mitchardiwxfig"
+      index={1}
+      key={0}/>,
+      <TestimonialCard
+    summary='Easy to play and win'
+      reviewText="XP and coins feel fair and not too grindy. It’s easy to stay motivated."
+      rating= {5}
+      date= "SEP 19"
+      author= "Youlonda Chazettedardmx"
+      index={2}
+      key={0}/>,
+      <TestimonialCard
+    summary='Makes predictions fun'
+      reviewText="I didn’t think I’d enjoy prediction games, but Plutus makes it feel stress-free. Would be cool to see achievement badges for milestones."
+      rating= {5}
+      date= "AUG 22"
+      author= "Yisell Grigoroniil"
+      index={3}
+      key={0}/>,
+      <TestimonialCard
+    summary='Great for passing time'
+      reviewText="Works as expected."
+      rating= {5}
+      date= "SEP 17"
+      author= "angeleque^whiffinohn"
+      index={4}
+      key={0}/>,
+      <TestimonialCard
+    summary='Looks legit till now'
+      reviewText="I hav cashed out twice now without any issues. Everything is smooth."
+      rating= {5}
+      date= "SEP 17"
+      author= "Vandan Otsonfjxprv"
+      index={5}
+      key={0}/>,
+      <TestimonialCard
+    summary='Unique and fun, please bring more mini games'
+      reviewText="Coins, XP, and predictions — the combo is unique. It feels rewarding without stress. Please bring in more mini-games."
+      rating= {5}
+      date= "SEP 17"
+      author= "Avonda Searsby"
+      index={6}
       key={0}/>
   ]
 
@@ -113,7 +172,7 @@ export default function Testimonials() {
         </CyclicCarousel>
         <div className='h-4'></div>
         <CyclicCarousel direction='right'>
-          {cards}
+          {cards2}
         </CyclicCarousel>
       </div>
 
