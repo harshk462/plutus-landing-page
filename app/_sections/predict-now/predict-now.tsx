@@ -23,7 +23,7 @@ const CreatorCard: React.FC<CreatorCardProps> = ({
   imagePlaceholderUrl,
 }) => {
   return (
-    <Link href={isApple()?APP_STORE_URL : PLAY_STORE_URL}>
+    <Link href={isApple()?APP_STORE_URL : PLAY_STORE_URL} target="__blank">
       <div
         className="
           relative lg:w-[20rem] lg:h-[32.8125rem] w-[15.625rem] h-[25rem]
