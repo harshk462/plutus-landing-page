@@ -31,12 +31,12 @@ export default function Testimonials() {
     author: "Tyrhonda Mielnikulqtin",
   },
   {
-    summary: "Cant complain except need higher referral bonus",
+    summary: "Makes predictions fun",
     reviewText:
-      "Plutus works as promised. Easy to use, fair, and transparent. Wish the referral bonuses were a bit higher to make it more exciting.",
+      "I didn’t think I’d enjoy prediction games, but Plutus makes it feel stress-free. Would be cool to see achievement badges for milestones.",
     rating: 5,
     date: "AUG 22",
-    author: "taunia-flaverty 1987pzyc",
+    author: "taunia-flaverty",
   },
   {
     summary: "Smooth design",
@@ -154,7 +154,7 @@ export default function Testimonials() {
   return (
     <section className="relative bg-black font-inter w-full overflow-hidden">
       {/* <img
-        src="/assets/plutusLogo.png"
+          src="/assets/plutusLogo.png"
         alt="plutus logo"
         className="absolute right-0 -scale-x-100 w-[250px] h-[250px] pointer-events-none"
       /> */}

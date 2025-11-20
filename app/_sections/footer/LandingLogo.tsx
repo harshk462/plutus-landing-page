@@ -18,7 +18,7 @@ const LandingLogo: React.FC<LandingLogoProps> = ({
     className="relative flex flex-shrink-0 scale-90 items-center gap-1 sm:scale-100 lg:gap-2"
   >
     <Image
-      src="/Torus_cropped.png"
+      src="https://cdn.plutus.gg/landing_page/Torus_cropped.png"
       alt="logo"
       width={50}
       height={50}

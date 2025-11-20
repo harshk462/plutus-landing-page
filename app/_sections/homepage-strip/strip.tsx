@@ -20,12 +20,12 @@ const FeatureItem = ({
     <h3 className="text-title uppercase mb-2 sm:mb-4 tracking-wide truncate">
       {playerCount}
     </h3>
-    <div className="flex items-center gap-2 lg:gap-4">
+    <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-4">
       <div
         className={`flex items-center justify-center rounded-full text-white 
         p-2 lg:p-4 ${iconColor === "pink" ? "bg-[#FF69EB]" : iconColor}`}
       >
-        <Icon className="w-5 h-5 sm:w-6 sm:h-6 lg:w-10 lg:h-10" />
+        <Icon className="w-4 h-4 lg:w-10 lg:h-10" />
       </div>
       <p className="text-28-regular font-koulen uppercase tracking-wider truncate">
         {description}
@@ -54,9 +54,9 @@ export default function HeaderStrip() {
   ];
 
   return (
-    <section className="bg-[linear-gradient(90deg,_#870075_-76.84%,_#100134_110.8%)] py-10 sm:py-16">
-      <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-10 md:gap-16 w-full">
+    <section className="bg-[linear-gradient(90deg,_#870075_-76.84%,_#100134_110.8%)] py-2 lg:py-10">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-row justify-between items-center gap-4 w-full">
   {featuresData.map((feature, index) => (
     <React.Fragment key={index}>
       <FeatureItem
@@ -66,7 +66,7 @@ export default function HeaderStrip() {
       />
       {/* Divider: horizontal on mobile, vertical on sm+ */}
       {index < featuresData.length - 1 && (
-        <div className="w-full sm:w-px h-px sm:h-24 bg-[#FF69EB] my-2 sm:my-0" />
+        <div className="w-px h-24 bg-[#FF69EB]" />
       )}
     </React.Fragment>
   ))}

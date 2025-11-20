@@ -3,26 +3,12 @@ import React from "react";
 
 export default function Map() {
   return (
-    <section className="relative bg-black pt-16">
+    <section className="relative bg-black">
       {/* Left top logo */}
-      <div
-        className="absolute top-0 left-0 pointer-events-none 
-                   w-[12rem] h-[12rem]
-                   sm:w-[16rem] sm:h-[16rem]
-                   md:w-[20rem] md:h-[20rem]
-                   lg:w-[21.875rem] lg:h-[21.875rem]"
-      >
-        <Image
-          src="/assets/plutusLogo.png"
-          alt="plutus logo"
-          fill
-          className="object-contain"
-          priority
-        />
-      </div>
+      <Image src="https://cdn.plutus.gg/landing_page/assets/plutusLogo.png" alt="" className="absolute left-0" width={250} height={250}/>
 
       {/* Section title */}
-      <h2 className="text-subheading text-center mb-[2rem] sm:mb-[3rem] px-4 sm:px-6 lg:px-8">
+      <h2 className="text-subheading text-center mb-[2rem] sm:mb-[3rem] px-4 sm:px-6 lg:px-8 pt-16">
         <span className="text-white uppercase tracking-wider">
           Where you can play Plutus?
         </span>
@@ -39,7 +25,7 @@ export default function Map() {
           "
         >
           <Image
-            src="/assets/wherePlutus.svg"
+            src="https://cdn.plutus.gg/landing_page/assets/wherePlutus.webp"
             alt="Where Plutus"
             fill
             className="object-contain rounded-2xl"
@@ -61,7 +47,7 @@ export default function Map() {
                    lg:w-[21.875rem] lg:h-[21.875rem]"
       >
         <Image
-          src="/assets/plutusLogo.png"
+          src="https://cdn.plutus.gg/landing_page/assets/plutusLogo.png"
           alt="plutus logo"
           fill
           className="object-contain scale-x-[-1] scale-y-[-1]"

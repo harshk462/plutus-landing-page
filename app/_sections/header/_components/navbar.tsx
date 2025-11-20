@@ -22,7 +22,7 @@ export function Navbar() {
       {/* Logo */}
       <Link href="#home" className="flex items-center gap-3">
         <Image
-          src="/plutus-logo-transparent.png"
+          src={"https://cdn.plutus.gg/landing_page/plutus-logo-transparent.png"}
           alt="Plutus Logo"
           width={40}
           height={40}

@@ -97,28 +97,28 @@ export default function PredictNow() {
       tag: "#F1",
       text: "Ferrari to finally win a race before March 2026?",
       subText: "Ends in 0D 0hrs 0mins",
-      url: "/assets/f1.png",
+      url: "https://cdn.plutus.gg/landing_page/assets/f1.png",
     },
     {
       trades: "20K Trades",
       tag: "#Youtube",
       text: "Will MrBeast cross 500 million YouTube subscribers by March 2026?",
       subText: "Ends in 0D 0hrs 0mins",
-      url: "/assets/mr-beast.png",
+      url: "https://cdn.plutus.gg/landing_page/assets/mr-beast.png",
     },
     {
       trades: "20K Trades",
       tag: "#SPORTS",
       text: "Messi’s MLS team to win their 2027 season opener?",
       subText: "Ends in 0D 0hrs 0mins",
-      url: "/assets/messi.png",
+      url: "https://cdn.plutus.gg/landing_page/assets/messi.png",
     },
     {
       trades: "20K Trades",
       tag: "#SPORTS",
       text: "Will Arsenal still be in the top 3 of the Premier League by March 2026?",
       subText: "Ends in 0D 0hrs 0mins",
-      url: "/assets/arsenal.png",
+      url: "https://cdn.plutus.gg/landing_page/assets/arsenal.png",
     },
   ];
 
@@ -126,7 +126,7 @@ export default function PredictNow() {
     <section className="relative bg-black font-inter w-full overflow-hidden">
       {/* Decorative Logo */}
       <img
-        src="/assets/plutusLogo.png"
+        src="https://cdn.plutus.gg/landing_page/assets/plutusLogo.png"
         alt="plutus logo"
         className="absolute right-0 -scale-x-100 w-[15.625rem] h-[15.625rem] pointer-events-none opacity-20"
       />

@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import React, { useRef, useState, useEffect } from "react";
 import GameCard from "./_components/game-card";
 import Carousel from "@/components/ui/carousel-2";
+import Image from "next/image";
 
 interface Game {
   title: string;
@@ -14,16 +15,16 @@ interface Game {
 
 const TopGames: React.FC = () => {
   const games: Game[] = [
-    { title: "8 Ball Pool", icon: "https://cdn.plutus.gg/public/gameAssets/card_pool.webp", url: "/assets/8-ball.gif" },
-    { title: "Tower Twist", icon: "https://cdn.plutus.gg/public/gameAssets/card_tower.webp", url: "/assets/tower-twist.gif" },
-    { title: "Blazing Blades", icon: "https://cdn.plutus.gg/public/gameAssets/blades-card.webp", url: "/assets/blazing-blades.gif" },
-    { title: "Boulder Blast", icon: "https://cdn.plutus.gg/public/gameAssets/boulder-card.webp", url: "/assets/boulder-blast.gif" },
-    { title: "Battleship", icon: "https://cdn.plutus.gg/public/gameAssets/header_battleship.webp", url: "/assets/battleship.gif" },
+    { title: "8 Ball Pool", icon: "https://cdn.plutus.gg/public/gameAssets/card_pool.webp", url: "https://cdn.plutus.gg/landing_page/assets/8-ball.gif" },
+    { title: "Tower Twist", icon: "https://cdn.plutus.gg/public/gameAssets/card_tower.webp", url: "https://cdn.plutus.gg/landing_page/assets/tower-twist.gif" },
+    { title: "Blazing Blades", icon: "https://cdn.plutus.gg/public/gameAssets/blades-card.webp", url: "https://cdn.plutus.gg/landing_page/assets/blazing-blades.gif" },
+    { title: "Boulder Blast", icon: "https://cdn.plutus.gg/public/gameAssets/boulder-card.webp", url: "https://cdn.plutus.gg/landing_page/assets/boulder-blast.gif" },
+    { title: "Battleship", icon: "https://cdn.plutus.gg/public/gameAssets/header_battleship.webp", url: "https://cdn.plutus.gg/landing_page/assets/battleship.gif" },
   ];
 
   return (
     <section className="relative bg-black font-inter overflow-x-hidden" id="games">
-      <img src="/assets/plutusLogo.png" alt="" className="absolute left-0" />
+      <Image src="https://cdn.plutus.gg/landing_page/assets/plutusLogo.png" alt="" className="absolute left-0" width={250} height={250}/>
       <div className="w-full px-4 sm:px-6 lg:px-8 pt-16">
         <h2 className="text-center mb-12">
           <span className="text-subheading font-regular uppercase">TOP GAMES ON</span>

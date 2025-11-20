@@ -31,7 +31,7 @@ export default function TestimonialCard({
 >
   {/* Decorative Background Logo */}
   <img
-    src="/assets/plutusLogo.png"
+    src="https://cdn.plutus.gg/landing_page/assets/plutusLogo.png"
     alt=""
     className={`absolute w-[180px] opacity-20 ${
       index % 2 === 0 ? 'top-2 left-2' : 'bottom-2 right-2 -scale-x-100'
@@ -50,7 +50,7 @@ export default function TestimonialCard({
       </div>
     </div>
 
-    <div className="flex flex-col items-end text-white/70 text-14-regular-inter z-10">
+    <div className="flex flex-col items-end text-white/70 text-14-regular-inter z-10 text-end">
       <p>{date}</p>
       <p>{author}</p>
     </div>
@@ -58,7 +58,7 @@ export default function TestimonialCard({
 
   {/* Review Text */}
   <div className="text-16-regular-inter text-white/70 mt-3 z-10 flex flex-1 items-center">
-    <p className="leading-relaxed text-start">{reviewText}</p>
+    <p className="leading-relaxed text-start line-clamp-3">{reviewText}...</p>
   </div>
 
   {/* Footer Logo */}

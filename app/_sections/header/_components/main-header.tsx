@@ -10,21 +10,10 @@ export function MainHeader() {
 
   return (
     <section className="relative w-full h-[calc(100dvh-5rem)] flex flex-col items-center justify-center overflow-hidden">
-
-      {/* Fallback Image While Video Loads */}
-      {!videoLoaded && (
-        <Image
-          src="/assets/homepage-video-placeholder.jpg"
-          alt="background placeholder"
-          fill
-          className="object-cover z-0"
-        />
-      )}
-
       {/* Desktop Video */}
       <div className="hidden lg:block absolute inset-0 z-0">
         <video
-          src="/assets/homepage-video.mp4"
+          src={"https://cdn.plutus.gg/landing_page/assets/homepage-video.mp4"}
           autoPlay
           muted
           loop
@@ -37,7 +26,7 @@ export function MainHeader() {
       {/* Mobile Video */}
       <div className="block lg:hidden absolute inset-0 z-0">
         <video
-          src="/assets/homepage-video-mobile.mp4"
+          src={"https://cdn.plutus.gg/landing_page/assets/homepage-video-mobile.mp4"}
           autoPlay
           muted
           loop
@@ -87,7 +76,7 @@ export function MainHeader() {
             )}
           >
             <Image
-              src="/apple_logo.svg"
+              src="https://cdn.plutus.gg/landing_page/apple_logo.svg"
               alt="Apple Logo"
               width={29}
               height={36}
@@ -114,7 +103,7 @@ export function MainHeader() {
             )}
           >
             <Image
-              src="/google_play_logo.svg"
+              src="https://cdn.plutus.gg/landing_page/google_play_logo.svg"
               alt="Google Play Logo"
               width={30}
               height={33}
@@ -135,7 +124,7 @@ export function MainHeader() {
   
       <div className="absolute left-0 bottom-0 z-10 w-1/2 h-[220px] lg:w-1/3 lg:h-[420px]">
   <Image
-    src="/left_side_predictions.png"
+    src="https://cdn.plutus.gg/landing_page/left_side_predictions.png"
     alt="Left Side Predictions"
     fill
     className="object-cover"
@@ -144,7 +133,7 @@ export function MainHeader() {
 
 <div className="absolute right-0 bottom-0 z-10 w-1/2 h-[220px] lg:w-1/3 lg:h-[420px]">
   <Image
-    src="/right_side_predictions.png"
+    src="https://cdn.plutus.gg/landing_page/right_side_predictions.png"
     alt="Right Side Predictions"
     fill
     className="object-cover"
