@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Koulen, Inter, Mulish } from "next/font/google";
+import { Koulen, Inter, Mulish, Poppins } from "next/font/google";
 import "./globals.css";
 
 const koulen = Koulen({
@@ -18,6 +18,12 @@ const mulish = Mulish({
   subsets: ["latin"],
 });
 
+const poppins = Poppins({
+  variable:'--font-poppins',
+  weight:"400",
+  subsets:['latin']
+})
+
 export const metadata: Metadata = {
   title: "Plutus Landing Page",
   description: "Plutus Landing Page",
@@ -31,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${koulen.variable} ${inter.variable} ${mulish.variable} antialiased`}
+        className={`${koulen.variable} ${inter.variable} ${mulish.variable} ${poppins.variable} antialiased`}
       >
         <main className="size-full bg-neutral-950 min-h-screen">
           {children}

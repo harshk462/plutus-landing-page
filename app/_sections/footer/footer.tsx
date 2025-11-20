@@ -28,14 +28,14 @@ function FooterLinksMapped() {
         <div className="flex gap-10">
             {footerLinks.map((link) => (
                 <div key={link.header} className="flex flex-col gap-2">
-                    <p className="text-white text-sm font-medium">{link.header}</p>
+                    <p className="text-white text-14-bold-poppins">{link.header}</p>
                     <div className="flex flex-col gap-2 text-white/70">
                         {link.links.map((link) => (
                             <PlutusLink
                                 href={link.name === "Affiliates" ? (isApple() ? APP_STORE_URL : PLAY_STORE_URL) : link.href} 
                                 key={link.name}
                                 target="_blank"
-                                className="text-white/70 text-sm p-0 justify-start"
+                                className="text-white/70 text-14-regular-poppins p-0 justify-start"
                             >
                                 {link.name}
                             </PlutusLink>

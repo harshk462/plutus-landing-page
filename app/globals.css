@@ -14,6 +14,7 @@ html {
   --font-koulen: var(--font-koulen);
   --font-inter: var(--font-inter);
   --font-mulish: var(--font-mulish);
+  --font-poppins:var(--font-poppins);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -140,6 +141,9 @@ html {
   .font-koulen {
     font-family: var(--font-koulen);
   }
+  .font-poppins{
+    font-family: var(--font-poppins);
+  }
 }
 
 
@@ -222,11 +226,22 @@ html {
   @apply font-koulen font-normal text-[0.625rem] lg:text-[0.875rem];
 }
 
+
 .text-14-medium-inter {
   @apply font-inter font-medium text-[0.75rem] lg:text-[0.875rem]; /* 12px / 16 = 0.75rem, 14px / 16 = 0.875rem */
 }
 .text-14-regular-inter {
   @apply font-inter font-normal text-[0.75rem] lg:text-[0.875rem];
+}
+
+.text-14-bold-poppins {
+  @apply font-poppins font-bold text-[0.75rem] lg:text-[0.875rem]; /* 12px / 16 = 0.75rem, 14px / 16 = 0.875rem */
+}
+.text-14-medium-poppins {
+  @apply font-poppins font-medium text-[0.75rem] lg:text-[0.875rem]; /* 12px / 16 = 0.75rem, 14px / 16 = 0.875rem */
+}
+.text-14-regular-poppins {
+  @apply font-poppins font-normal text-[0.75rem] lg:text-[0.875rem];
 }
 
 .text-12-medium-inter {
