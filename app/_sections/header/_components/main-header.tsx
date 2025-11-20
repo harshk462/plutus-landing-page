@@ -3,29 +3,42 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { APP_STORE_URL, PLAY_STORE_URL } from "@/constants/constants";
+import { useState } from "react";
 
 export function MainHeader() {
+  const [videoLoaded,setVideoLoaded]=useState(false);
   return (
     <section className="relative w-full h-[calc(100dvh-5rem)] flex flex-col items-center justify-center overflow-hidden">
       {/* Background Image */}
     <div className="lg:absolute inset-0 z-0">
-      <Image
-        src="/assets/homepage-video.gif"
-        alt="background animation"
-        fill
-        className="object-cover"
-        priority
-      />
+       <video
+          src="/assets/homepage-video.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          onLoadedData={()=>setVideoLoaded(true)}
+          className="w-full h-full object-cover"
+        />
     </div>
 
     <div className="absolute lg:hidden inset-0 z-0">
-      <Image
-        src="/assets/homepage-video-mobile.gif"
+      {/* <Image
+        src="/assets/homepage-video-mobile.mp4"
         alt="Mobile background animation"
         fill
         className="object-cover"
         priority
-      />
+      /> */}
+      <video
+          src="/assets/homepage-video-mobile.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          onLoadedData={()=>setVideoLoaded(true)}
+          className="w-full h-full object-cover"
+        />
     </div>
 
 
