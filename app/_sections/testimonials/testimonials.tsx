@@ -27,7 +27,7 @@ export default function Testimonials() {
     reviewText:
       "I had to figure things out on my own at first, but once I got used to it, the app became really fun. Tutorial pop-ups for new users would help a lot.",
     rating: 5,
-    date: "SEP 19",
+    date: "JUN 19",
     author: "Tyrhonda Mielnikulqtin",
   },
   {
@@ -35,7 +35,7 @@ export default function Testimonials() {
     reviewText:
       "I didn’t think I’d enjoy prediction games, but Plutus makes it feel stress-free. Would be cool to see achievement badges for milestones.",
     rating: 5,
-    date: "AUG 22",
+    date: "JUL 7",
     author: "taunia-flaverty",
   },
   {
@@ -43,7 +43,7 @@ export default function Testimonials() {
     reviewText:
       "The UI is minimal and distraction-free, no annoying ads or clutter. Adding a light mode option would make it even better for day use",
     rating: 5,
-    date: "SEP 22",
+    date: "MAY 22",
     author: "夷荀闵危",
   },
 ];
@@ -70,7 +70,7 @@ export default function Testimonials() {
     summary='Friendly for beginners'
       reviewText="I had to figure things out on my own at first, but once I got used to it, the app became really fun. Tutorial pop-ups for new users would help a lot."
       rating= {5}
-      date= "SEP 19"
+      date= "JUN 19"
       author= "Tyrhonda Mielnikulqtin"
       index={2}
       key={0}/>,
@@ -86,7 +86,7 @@ export default function Testimonials() {
     summary='Smooth design'
       reviewText="The Ul is minimal and distraction-free, no annoying ads or clutter. Adding a light mode option would make it even better for day use"
       rating= {5}
-      date= "SEP 22"
+      date= "MAY 22"
       author= "夷荀闵危"
       index={4}
       key={0}/>,
@@ -97,7 +97,7 @@ export default function Testimonials() {
     summary='favorite casual app'
       reviewText="Out of all reward apps I’ve tried, this is the only one that feels legit. Payouts happen fast and without hassle."
       rating= {5}
-      date= "SEP 19"
+      date= "MAR 19"
       author= "Muhmmad Klichbsnplq"
       index={0}
       key={0}/>,
@@ -105,7 +105,7 @@ export default function Testimonials() {
     summary='Good game'
       reviewText="I use Plutus casually and still manage to earn. It doesn’t push me to spend, which I appreciate."
       rating= {5}
-      date= "SEP 19"
+      date= "JUN 26"
       author= "Shatasia Mitchardiwxfig"
       index={1}
       key={0}/>,
@@ -113,7 +113,7 @@ export default function Testimonials() {
     summary='Easy to play and win'
       reviewText="XP and coins feel fair and not too grindy. It’s easy to stay motivated."
       rating= {5}
-      date= "SEP 19"
+      date= "MAY 13"
       author= "Youlonda Chazettedardmx"
       index={2}
       key={0}/>,
@@ -121,7 +121,7 @@ export default function Testimonials() {
     summary='Makes predictions fun'
       reviewText="I didn’t think I’d enjoy prediction games, but Plutus makes it feel stress-free. Would be cool to see achievement badges for milestones."
       rating= {5}
-      date= "AUG 22"
+      date= "JUL 7"
       author= "Yisell Grigoroniil"
       index={3}
       key={0}/>,
@@ -137,7 +137,7 @@ export default function Testimonials() {
     summary='Looks legit till now'
       reviewText="I hav cashed out twice now without any issues. Everything is smooth."
       rating= {5}
-      date= "SEP 17"
+      date= "OCT 10"
       author= "Vandan Otsonfjxprv"
       index={5}
       key={0}/>,
@@ -145,7 +145,7 @@ export default function Testimonials() {
     summary='Unique and fun, please bring more mini games'
       reviewText="Coins, XP, and predictions — the combo is unique. It feels rewarding without stress. Please bring in more mini-games."
       rating= {5}
-      date= "SEP 17"
+      date= "MOV 19"
       author= "Avonda Searsby"
       index={6}
       key={0}/>
