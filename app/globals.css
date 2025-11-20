@@ -144,7 +144,7 @@ html {
 
 
 .text-heading {
-  @apply font-koulen font-bold text-[5.25rem] lg:text-[8.75rem]; /* 84px / 16 = 5.25rem, 140px / 16 = 8.75rem */
+  @apply font-koulen font-normal text-[5.25rem] lg:text-[8.75rem]; /* 84px / 16 = 5.25rem, 140px / 16 = 8.75rem */
 }
 
 .text-subheading {

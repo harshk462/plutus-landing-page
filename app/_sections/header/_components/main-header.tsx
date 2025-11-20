@@ -6,41 +6,46 @@ import { APP_STORE_URL, PLAY_STORE_URL } from "@/constants/constants";
 import { useState } from "react";
 
 export function MainHeader() {
-  const [videoLoaded,setVideoLoaded]=useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   return (
     <section className="relative w-full h-[calc(100dvh-5rem)] flex flex-col items-center justify-center overflow-hidden">
-      {/* Background Image */}
-    <div className="lg:absolute inset-0 z-0">
-       <video
+
+      {/* Fallback Image While Video Loads */}
+      {!videoLoaded && (
+        <Image
+          src="/assets/homepage-video-placeholder.jpg"
+          alt="background placeholder"
+          fill
+          className="object-cover z-0"
+        />
+      )}
+
+      {/* Desktop Video */}
+      <div className="hidden lg:block absolute inset-0 z-0">
+        <video
           src="/assets/homepage-video.mp4"
           autoPlay
           muted
           loop
           playsInline
-          onLoadedData={()=>setVideoLoaded(true)}
+          onLoadedData={() => setVideoLoaded(true)}
           className="w-full h-full object-cover"
         />
-    </div>
+      </div>
 
-    <div className="absolute lg:hidden inset-0 z-0">
-      {/* <Image
-        src="/assets/homepage-video-mobile.mp4"
-        alt="Mobile background animation"
-        fill
-        className="object-cover"
-        priority
-      /> */}
-      <video
+      {/* Mobile Video */}
+      <div className="block lg:hidden absolute inset-0 z-0">
+        <video
           src="/assets/homepage-video-mobile.mp4"
           autoPlay
           muted
           loop
           playsInline
-          onLoadedData={()=>setVideoLoaded(true)}
+          onLoadedData={() => setVideoLoaded(true)}
           className="w-full h-full object-cover"
         />
-    </div>
-
+      </div>
 
       {/* Gradient Overlay */}
       <div
@@ -51,27 +56,26 @@ export function MainHeader() {
         }}
       />
 
-      {/* Content */}
-      <div className="relative z-20 w-full flex flex-col items-center justify-center px-4 md:px-6 lg:px-8 py-36">
-        {/* Main Text */}
+      {/* CONTENT — NOW PERFECTLY CENTERED ON MOBILE */}
+      <div className="relative z-20 w-full flex flex-col items-center justify-center px-4 md:px-6 lg:px-8 py-36 text-center">
+
         <div className="flex flex-col items-center justify-center mb-12 md:mb-16">
-          <h1 className="font-koulen font-normal text-[5rem] md:text-[6.25rem] lg:text-[8.75rem] leading-[80%] tracking-[-0.06em] text-center text-white">
+          <h1 className="text-heading text-white leading-[80%] tracking-[-0.06em]">
             Play<span className="text-plutus-pink">.</span>
           </h1>
-          <h1 className="font-koulen font-normal text-[5rem] md:text-[6.25rem] lg:text-[8.75rem] leading-[80%] tracking-[-0.06em] text-center text-white">
+          <h1 className="text-heading text-white leading-[80%] tracking-[-0.06em]">
             Predict<span className="text-plutus-pink">.</span>
           </h1>
-          <h1 className="font-koulen font-normal text-[5rem] md:text-[6.25rem] lg:text-[8.75rem] leading-[80%] tracking-[-0.06em] text-center text-white">
+          <h1 className="text-heading text-white leading-[80%] tracking-[-0.06em]">
             Win Real
           </h1>
-          <h1 className="font-koulen font-normal text-[5rem] md:text-[6.25rem] lg:text-[8.75rem] leading-[80%] tracking-[-0.06em] text-center text-white">
+         <h1 className="text-heading text-white leading-[80%] tracking-[-0.06em]">
             Rewards<span className="text-plutus-pink">.</span>
           </h1>
         </div>
 
-        {/* Download Buttons */}
-        <div className="flex flex-col sm:flex-row relative z-10 items-center justify-center gap-4 md:gap-6">
-          {/* App Store */}
+        {/* Download buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
           <Link
             href={APP_STORE_URL}
             target="_blank"
@@ -99,7 +103,6 @@ export function MainHeader() {
             </div>
           </Link>
 
-          {/* Google Play */}
           <Link
             href={PLAY_STORE_URL}
             target="_blank"
@@ -147,7 +150,6 @@ export function MainHeader() {
     className="object-cover"
   />
 </div>
-
 
     </section>
   );
