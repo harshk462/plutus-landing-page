@@ -60,7 +60,7 @@ export default function LandingFooter() {
                         <div className="flex">
                             <LandingLogo logoTextColor="text-white" />
                         </div>
-                        <p className="text-white/70 text-sm my-3">The Creator Led Gaming App</p>
+                        <p className="text-white/70 text-sm my-3">A New Era of Skill-Based Gaming</p>
                         <div className="flex items-center gap-4">
                             {socialLinks.map((link) => (
                                 <PlutusLink
