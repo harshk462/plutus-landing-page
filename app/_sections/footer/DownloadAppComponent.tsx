@@ -17,7 +17,7 @@ export default function DownloadAppComponent({ className, titleClassName, button
     return(
         <div className={cn("relative z-[6] flex flex-col items-end gap-4 text-white", className)}>
             <div className={cn("text-sm md:text-base", titleClassName)}>
-                Download Plutus now - the game is on!
+                Download Plutus and start competing.
             </div>
             <div className="flex gap-4">
                 <AppDownloadButton

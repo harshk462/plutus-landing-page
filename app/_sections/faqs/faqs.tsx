@@ -116,7 +116,7 @@ export default function FAQS() {
 
   const Answer=({ children }: { children: React.ReactNode })=> {
     return (
-      <div className="text-24-regular-inter">
+      <div className="text-18-regular-inter">
         <p className="text-[#676767]">{children}</p>
       </div>
     );
