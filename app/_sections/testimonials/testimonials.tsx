@@ -145,7 +145,7 @@ export default function Testimonials() {
     summary='Unique and fun, please bring more mini games'
       reviewText="Coins, XP, and predictions — the combo is unique. It feels rewarding without stress. Please bring in more mini-games."
       rating= {5}
-      date= "MOV 19"
+      date= "NOV 19"
       author= "Avonda Searsby"
       index={6}
       key={0}/>
