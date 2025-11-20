@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig:NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.plutus.gg",
+      },
+    ],
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

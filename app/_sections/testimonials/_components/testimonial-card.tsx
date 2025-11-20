@@ -57,8 +57,8 @@ export default function TestimonialCard({
   </div>
 
   {/* Review Text */}
-  <div className="text-16-regular-inter text-white/70 mt-3 z-10 flex flex-1 justify-center items-center">
-    <p className="leading-relaxed">{reviewText}</p>
+  <div className="text-16-regular-inter text-white/70 mt-3 z-10 flex flex-1 items-center">
+    <p className="leading-relaxed text-start">{reviewText}</p>
   </div>
 
   {/* Footer Logo */}

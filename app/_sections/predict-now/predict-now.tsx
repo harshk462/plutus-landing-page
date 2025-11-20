@@ -2,6 +2,7 @@
 "use client";
 
 import Carousel from "@/components/ui/carousel-2";
+import Image from "next/image";
 import React from "react";
 
 interface CreatorCardProps {
@@ -40,11 +41,16 @@ const CreatorCard: React.FC<CreatorCardProps> = ({
         {trades}
       </span>
 
-      {/* Background Image */}
-      <img
-        src={imagePlaceholderUrl}
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+      <div className="absolute inset-0 w-full h-full">
+        {/* <img
+          src={imagePlaceholderUrl}
+          className="absolute inset-0 w-full h-full object-cover"
+        /> */}
+        <Image 
+          src={imagePlaceholderUrl}
+          alt="Prediction Card"
+          fill/>
+      </div>
 
       {/* Overlay Gradient */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent" />
