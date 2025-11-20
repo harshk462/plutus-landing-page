@@ -2,7 +2,9 @@
 "use client";
 
 import Carousel from "@/components/ui/carousel-2";
+import { APP_STORE_URL, isApple, PLAY_STORE_URL } from "@/constants/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface CreatorCardProps {
@@ -21,68 +23,70 @@ const CreatorCard: React.FC<CreatorCardProps> = ({
   imagePlaceholderUrl,
 }) => {
   return (
-    <div
-      className="
-        relative lg:w-[20rem] lg:h-[32.8125rem] w-[15.625rem] h-[25rem]
-        rounded-2xl overflow-hidden
-        border border-[#FFFFFF1F] mr-[1.5rem]
-        outline outline-[0.09375rem] outline-[#FFFFFF1F]
-        outline-offset-[-0.09375rem]
-      "
-    >
-      {/* Trades Badge */}
-      <span
+    <Link href={isApple()?APP_STORE_URL : PLAY_STORE_URL}>
+      <div
         className="
-        absolute top-4 right-4 text-14-medium-inter text-white px-4 py-2
-        bg-black/40 rounded-3xl w-fit
-        backdrop-blur-md z-1000
-      "
+          relative lg:w-[20rem] lg:h-[32.8125rem] w-[15.625rem] h-[25rem]
+          rounded-2xl overflow-hidden
+          border border-[#FFFFFF1F] mr-[1.5rem]
+          outline outline-[0.09375rem] outline-[#FFFFFF1F]
+          outline-offset-[-0.09375rem]
+        "
       >
-        {trades}
-      </span>
-
-      <div className="absolute inset-0 w-full h-full">
-        {/* <img
-          src={imagePlaceholderUrl}
-          className="absolute inset-0 w-full h-full object-cover"
-        /> */}
-        <Image 
-          src={imagePlaceholderUrl}
-          alt="Prediction Card"
-          fill/>
-      </div>
-
-      {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent" />
-
-      {/* Content */}
-      <div className="absolute bottom-4 left-0 w-full px-4 flex flex-col text-white">
-        {/* Category Tag */}
+        {/* Trades Badge */}
         <span
           className="
-          text-14-medium-inter px-4 py-2
-          bg-white/10 rounded-3xl w-fit
-          backdrop-blur-md
+          absolute top-4 right-4 text-14-medium-inter text-white px-4 py-2
+          bg-black/40 rounded-3xl w-fit
+          backdrop-blur-md z-1000
         "
         >
-          {tag}
+          {trades}
         </span>
 
-        <h2 className="text-18-regular-inter mt-1">{text}</h2>
+        <div className="absolute inset-0 w-full h-full">
+          {/* <img
+            src={imagePlaceholderUrl}
+            className="absolute inset-0 w-full h-full object-cover"
+          /> */}
+          <Image 
+            src={imagePlaceholderUrl}
+            alt="Prediction Card"
+            fill/>
+        </div>
 
-        <p className="text-12-medium-inter text-gray-300 mt-2">{subText}</p>
+        {/* Overlay Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent" />
 
-        {/* Yes / No Buttons */}
-        <div className="flex justify-between mt-4">
-          <button className="cursor-pointer flex-1 mr-2 border border-[#07F93C] rounded-[0.4625rem] text-12-regular-inter bg-[#004012] py-1">
-            Yes
-          </button>
-          <button className="cursor-pointer flex-1 ml-2 border border-[#FD5C5C] rounded-[0.4625rem] text-12-regular-inter bg-[#450404] py-1">
-            No
-          </button>
+        {/* Content */}
+        <div className="absolute bottom-4 left-0 w-full px-4 flex flex-col text-white">
+          {/* Category Tag */}
+          <span
+            className="
+            text-14-medium-inter px-4 py-2
+            bg-white/10 rounded-3xl w-fit
+            backdrop-blur-md
+          "
+          >
+            {tag}
+          </span>
+
+          <h2 className="text-18-regular-inter mt-1">{text}</h2>
+
+          <p className="text-12-medium-inter text-gray-300 mt-2">{subText}</p>
+
+          {/* Yes / No Buttons */}
+          <div className="flex justify-between mt-4">
+            <button className="cursor-pointer flex-1 mr-2 border border-[#07F93C] rounded-[0.4625rem] text-12-regular-inter bg-[#004012] py-1">
+              Yes
+            </button>
+            <button className="cursor-pointer flex-1 ml-2 border border-[#FD5C5C] rounded-[0.4625rem] text-12-regular-inter bg-[#450404] py-1">
+              No
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
