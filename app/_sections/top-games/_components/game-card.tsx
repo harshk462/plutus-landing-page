@@ -36,8 +36,7 @@ export default function GameCard({ title, icon, imagePlaceholderUrl }: GameCardP
             <Image
               src={icon}
               alt={`${title} icon`}
-              width={300}
-              height={300}
+              fill
               className="object-cover"
             />
           </div>
